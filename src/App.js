@@ -1,16 +1,17 @@
 import Task from "./components/task";
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
-  const [tasks, setTasks] = useState([]);
-  const [showConfetti, setShowConfetti] = useState(false);
-
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
+  
   function handleAddTask(event) {
     event.preventDefault();
     const newTaskName = event.target.elements["new-task"].value;
     console.log("newTaskName");
     setTasks([...tasks, newTaskName]);
+    localStorage.setItem("tasks", JSON.stringify([...tasks, newTaskName]));
+    event.target.reset()
   }
 
   function handleDeleteTask(targetID) {

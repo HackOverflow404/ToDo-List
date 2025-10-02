@@ -3,14 +3,20 @@ import confetti from "canvas-confetti";
 
 function Task({ name, id, handleDeleteTask }) {
   const [completed, setCompleted] = useState(false);
-  
+
   useEffect(() => {
     if (completed) {
-      confetti({
-        particleCount: 150,
-        spread: 70,
-        origin: { y: 0 },
-      });
+      for (let i = 0; i < 10; i++) {
+        confetti({
+          particleCount: 100,
+          startVelocity: 30,
+          spread: 360,
+          origin: {
+            x: Math.random(),
+            y: Math.random() - 0.2,
+          },
+        });
+      }
     }
   }, [completed]);
 
