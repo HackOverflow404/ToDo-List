@@ -17,6 +17,7 @@ function App() {
   function handleDeleteTask(targetID) {
     console.log("Deleting task with ID:", targetID);
     setTasks(tasks.filter((task, id) => id !== targetID));
+    localStorage.setItem("tasks", JSON.stringify(tasks.filter((task, id) => id !== targetID)));
   }
 
   return (
