@@ -2,9 +2,13 @@
 
 A simple website to create, delete, and complete tasks, created and used to teach React.js for a workshop for CS 124 Honors students.
 
+_________________
+
 Here are the slides (with additional learning resources) attached, along with the GitHub repository for the completed To-Do List website:
 
 [React.js Workshop Slides](./React.js-Workshop-Slides.pdf)
+
+________________
 
 Here's additional to learn and practice React.js:
 - https://codesandbox.io/p/sandbox/react-new
@@ -13,3 +17,9 @@ Here's additional to learn and practice React.js:
 - https://www.w3schools.com/REACT
 - https://www.freecodecamp.org/learn/front-end-development-libraries/#react
 - https://react.dev/learn
+
+_________________
+
+URL for webapp:
+
+https://to-do-list-three-sage-17.vercel.app/
