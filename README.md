@@ -4,7 +4,7 @@ A simple website to create, delete, and complete tasks, created and used to teac
 
 Here are the slides (with additional learning resources) attached, along with the GitHub repository for the completed To-Do List website:
 
-[React.js Workshop Slides](./React.js-Workshop-Slides)
+[React.js Workshop Slides](./React.js-Workshop-Slides.pdf)
 
 Here's additional to learn and practice React.js:
 - https://codesandbox.io/p/sandbox/react-new
